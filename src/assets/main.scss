@@ -1,11 +1,16 @@
 .main{
     background-color: rgb(212, 143, 56);
-    height:95vh;
+    height:92vh;
     padding: 5rem;
+    .select{
+        position: absolute;
+        width: 300px;
+        top: 80px;
+    }
     .card_box{
         background: white;
         padding: 5rem;
-        height: calc(95vh - 5rem);
+        height: calc(92vh - 5rem);
         .result{
             background: black;
             height: 4rem;

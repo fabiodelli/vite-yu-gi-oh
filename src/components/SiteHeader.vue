@@ -5,7 +5,9 @@ name:'SiteHeader'
 </script>
 
 <template>
-    <div class="header">ciao</div>
+    <div class="header">
+        <h1>YU-Gi-OH</h1>
+    </div>
 </template>
 
 
