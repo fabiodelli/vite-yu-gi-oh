@@ -1,6 +1,6 @@
 .main{
     background-color: rgb(212, 143, 56);
-    height:92vh;
+    height:100%;
     padding: 5rem;
     .select{
         position: absolute;
@@ -10,11 +10,27 @@
     .card_box{
         background: white;
         padding: 5rem;
-        height: calc(92vh - 5rem);
+        height: calc(100% - 5rem);
         .result{
             background: black;
             height: 4rem;
-
+            
+        }
+        .row{
+            .col-2{
+                .card_item{
+                    border: 2px solid;
+                    img{
+                        max-width: 100%;
+                        border-bottom: 2px solid;
+                    }
+                    .info{
+                        height: 80px;
+                        background-color: rgb(212, 143, 56);
+                        
+                    }
+                }
+            }
         }
     }
 }
