@@ -1,18 +1,25 @@
 <script>
 export default {
     name: 'SiteMain',
-    props: {
-        cards: Array
-    },
+    props: { cards: Array},
+    emits:['changed'],
     data(){
-        search:'' 
+        return{
+            search:'' 
+
+        }
     },
+    methods:{
+        test(){
+            console.log('funziona!');
+        }
+    }
 }
 </script>
 
 <template>
     <div class="main">
-        <select class="form-select select" aria-label="Default select example" v-model="search">
+        <select class="form-select select" aria-label="Default select example" v-model="search" @change="$emit('changed')">
             <option value="alien">Alien</option>
             <option value="mage">Mage</option>
             <option value="warrior">Warrior</option>

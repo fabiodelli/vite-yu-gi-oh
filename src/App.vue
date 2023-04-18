@@ -16,9 +16,10 @@ export default {
     }
   },
   methods: {
+    
     callApi(url) {
       axios
-        .get(url+'archetype=search')
+        .get(url+'&archetype={{search}}')
         .then(response => { 
           this.cards = response.data.data
         })
@@ -37,7 +38,7 @@ export default {
 
   <SiteHeader></SiteHeader>
 
-  <SiteMain :cards="cards"></SiteMain>
+  <SiteMain :cards="cards" @changed="callApi()"></SiteMain>
  
 </template>
 
