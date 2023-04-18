@@ -10,7 +10,7 @@ export default {
   },
   data() {
     return {
-      API_URL: 'https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=0',
+      API_URL: 'https://db.ygoprodeck.com/api/v7/cardinfo.php?num=200&offset=0',
       
       cards: null
     }
@@ -19,13 +19,14 @@ export default {
     
     callApi(url) {
       axios
-        .get(url+'&archetype={{search}}')
+        .get(url+'archetype={{siteMain.search}}')
         .then(response => { 
           this.cards = response.data.data
         })
         .catch(err => {
           console.error(err.message);
         })
+        console.log(SiteMain.search);
     }
   },
   mounted() {

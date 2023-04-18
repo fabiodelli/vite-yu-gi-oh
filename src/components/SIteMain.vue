@@ -11,7 +11,7 @@ export default {
     },
     methods:{
         test(){
-            console.log('funziona!');
+            console.log('search');
         }
     }
 }
