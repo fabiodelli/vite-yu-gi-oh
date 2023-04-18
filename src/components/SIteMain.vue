@@ -18,7 +18,7 @@ export default {
         <div class="card_box">
             <div class="result"></div>
             <div class="row d-flex justify-content-between">
-                <div v-for="card in cards" class="col-2 d-flex">
+                <div v-for="card in cards" class=" d-flex">
                     <div class="card_item mt-3">
                         <img class="w-100 " :src="card.card_images[0].image_url" alt="">
                         <div class="info p-2">
